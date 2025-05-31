@@ -1,0 +1,30 @@
+@import "../variables";
+
+.dnx-anchor {
+    font-family: sans-serif;
+  
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__icon--left {
+        margin-right: .25rem;
+    }
+
+    &__icon--right {
+        margin-left: .25rem;
+    }
+
+    &__text-link {
+        color: $primary-color;
+        padding: 0 .125rem;
+        margin: 0 .125rem;
+        font-style: italic;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}

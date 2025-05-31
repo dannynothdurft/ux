@@ -1,0 +1,56 @@
+/* Box-Sizing und Reset für alle Elemente */
+*,
+*::before,
+*::after {
+  vertical-align: baseline;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Button Verbesserungen */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+  color: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  appearance: none;
+
+  font: inherit;
+
+   -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}
+
+/* Links */
+a {
+  touch-action: manipulation;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &[href^='tel'] {
+    color: inherit;
+  }
+}
