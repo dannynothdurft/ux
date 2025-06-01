@@ -9,6 +9,7 @@ interface LogoProps {
   href: string;
   size?: number;
   slogan?: string;
+  slogan2: string;
   title?: string;
   ariaLabel?: string;
   rel?: string;
@@ -16,7 +17,17 @@ interface LogoProps {
 }
 
 const Logo: FC<LogoProps> = memo(
-  ({ href, src, size = 30, slogan, title, ariaLabel, rel, className }) => {
+  ({
+    href,
+    src,
+    size = 30,
+    slogan,
+    slogan2,
+    title,
+    ariaLabel,
+    rel,
+    className,
+  }) => {
     const combinedClassName = ["dnx-logo", className].filter(Boolean).join(" ");
 
     return (
@@ -40,11 +51,8 @@ const Logo: FC<LogoProps> = memo(
         />
         {slogan && (
           <span className="dnx-logo__slogan">
-            {slogan.split(" ").map((word, idx) => (
-              <span key={idx} className="dnx-logo__slogan-word">
-                {word}
-              </span>
-            ))}
+            <span>{slogan}</span>
+            {slogan2 && <span>{slogan2}</span>}
           </span>
         )}
       </Link>

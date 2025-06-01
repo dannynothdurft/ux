@@ -21,7 +21,8 @@ export default function Home() {
       <Logo
         src="/images/Logo.png"
         href="#"
-        slogan="clever Gebrauchtwagen kaufen"
+        slogan="Gebrauchtwagen"
+        slogan2="clever kaufen"
       />
     </div>
   );
