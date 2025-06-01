@@ -1,5 +1,6 @@
 import Anchor from "@/ui/Anchor";
 import { Logout } from "@/utils/svg";
+import Logo from "@/ux/Logo";
 
 export default function Home() {
   return (
@@ -17,6 +18,11 @@ export default function Home() {
         />
         .
       </p>
+      <Logo
+        src="/images/Logo.png"
+        href="#"
+        slogan="clever Gebrauchtwagen kaufen"
+      />
     </div>
   );
 }

@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.dnx-logo {
+    font-family: sans-serif;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    &__images {
+        width: auto;
+    }
+    
+    &__slogan {
+        font-family: sans-serif;
+        color: $secondary-color;
+        margin-left: .5rem;
+        font-size: .55rem;
+    }
+
+    &__slogan-word {
+        display: block;
+    }
+}
