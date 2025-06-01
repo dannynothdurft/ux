@@ -1,0 +1,121 @@
+@import '../variables.scss';
+
+.dnx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $button-padding-base;
+  border-radius: $border-radius;
+  font-weight: 500;
+  transition: $transition-base;
+  text-align: center;
+  border: $border-width solid transparent;
+  border-radius: $border-radius-lg;
+
+  /* focus */
+  &:focus {
+    box-shadow: 0 0 0 2px #a3bffa;
+  }
+
+  /* disabled */
+  &:disabled {
+    background: $gray-lighter;
+    color: $text-color-light;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  /* Button Varianten */
+  &__primary {
+    background: $primary-color;
+    color: $white;
+
+    &:hover {
+      background: $dark-primary;
+      color: $white;
+    }
+  }
+  &__secondary {
+    background: $secondary-color;
+    color: $white;
+
+    &:hover {
+      background: $dark-secondary;
+      color: $white;
+    }
+  }
+  &__error {
+    background: $danger-color;
+    color: $white;
+
+    &:hover {
+      background: $danger-color-dark;
+      color: $white;
+    }
+  }
+  &__success {
+    background: $success-color;
+    color: $white;
+
+    &:hover {
+      background: $success-color-dark;
+      color: $white;
+    }
+  }
+  &__warning {
+    background: $warning-color;
+    color: $black;
+
+    &:hover {
+      background: $warning-color-dark;
+      color: $black;
+    }
+  }
+  &__outline {
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background: $light-primary;
+      border-color: $light-primary;
+      color: $white;
+    }
+  }
+  &__link {
+    color: $primary-color;
+
+    &:hover {
+      color: $lighter-primary;
+    }
+  }
+
+  /* Button Größen */
+  &__sm {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+  }
+  &__md {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+  &__lg {
+    font-size: 1.15rem;
+    padding: 0.7rem 1.7rem;
+  }
+  &__xl {
+    font-size: 1.3rem;
+    padding: 1rem 2.2rem;
+  }
+
+  /* Icon Anordnung */
+  &__icon-left {
+    margin-right: 0.6em;
+    display: flex;
+    align-items: center;
+  }
+  &__icon-right {
+    margin-left: 0.6em;
+    display: flex;
+    align-items: center;
+  }
+}

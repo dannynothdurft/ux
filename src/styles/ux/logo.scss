@@ -1,28 +1,27 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 .dnx-logo {
-    font-family: sans-serif;
+  font-family: 'Lexed Deca', 'Arial', sans-serif;
 
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__images {
+    width: auto;
+  }
+
+  &__slogan {
+    font-family: 'Rubik', 'Arial', sans-serif;
+    color: $primary-color;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    
-    &__images {
-        width: auto;
-    }
-    
-    &__slogan {
-        font-family: sans-serif;
-        color: $primary-color;
-        margin-left: .5rem;
-        font-size: .7rem;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-    }
+    align-items: flex-start;
+    text-align: left;
+  }
 }
