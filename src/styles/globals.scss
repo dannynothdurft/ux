@@ -1,5 +1,37 @@
 @import './reset.scss';
 
 body {
-    background-color: #fff;
+  background-color: #fff;
+}
+
+h1 {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+p {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
